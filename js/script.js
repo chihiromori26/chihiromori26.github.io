@@ -58,6 +58,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { rootMargin: '-40% 0px -50% 0px' });
   sections.forEach(sec => sectionObserver.observe(sec));
 
+  // Résumé preview modal
+const resumeModal = document.getElementById('resumeModal');
+const resumeViewBtns = document.querySelectorAll('.resume-view-btn');
+const resumeCloseEls = document.querySelectorAll('[data-close-modal]');
+
+function openResumeModal() {
+  resumeModal.classList.add('open');
+  resumeModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+}
+function closeResumeModal() {
+  resumeModal.classList.remove('open');
+  resumeModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+}
+resumeViewBtns.forEach(btn => btn.addEventListener('click', openResumeModal));
+resumeCloseEls.forEach(el => el.addEventListener('click', closeResumeModal));
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeResumeModal(); });
+
   // ---------------------------------------------
   // Language switch (EN / JA)
   // ---------------------------------------------
@@ -68,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const titles = {
     en: 'Chihiro Mori — Computer Science, University of Toronto',
-    ja: 'Chihiro Mori（森ちひろ）— トロント大学 コンピュータサイエンス'
+    ja: 'Chihiro Mori（森千尋）— トロント大学 コンピュータサイエンス'
   };
   const descriptions = {
     en: 'Portfolio of Chihiro Mori, Computer Science student at the University of Toronto — research in AI, LLMs, and NLP, technical projects, and cross-cultural activities.',

@@ -54,8 +54,8 @@
       <div class="hero-actions reveal">
         <a href="#research" class="btn btn-primary" data-lang="en">View my work</a>
         <a href="#research" class="btn btn-primary" data-lang="ja" hidden>研究・活動を見る</a>
-        <a href="assets/Chihiro Mori Resume May 31 2026.pdf" class="btn btn-outline" download data-lang="en">Download résumé</a>
-        <a href="assets/Chihiro Mori Resume May 31 2026.pdf" class="btn btn-outline" download data-lang="ja" hidden>履歴書をダウンロード</a>
+        <button type="button" class="btn btn-outline resume-view-btn" data-lang="en">View résumé</button>
+        <button type="button" class="btn btn-outline resume-view-btn" data-lang="ja" hidden>履歴書を見る</button>
       </div>
       <div class="hero-links reveal">
         <a href="https://www.linkedin.com/in/mori-chihiro/" target="_blank" rel="noopener">LinkedIn</a>
@@ -427,6 +427,23 @@
     <p data-lang="ja" hidden>&copy; <span class="year-ja"></span> Chihiro Mori. HTML・CSS・JavaScriptで制作し、GitHub Pagesで公開しています。</p>
   </div>
 </footer>
+
+<!-- Résumé preview modal -->
+<div class="resume-modal" id="resumeModal" aria-hidden="true">
+  <div class="resume-modal-backdrop" data-close-modal></div>
+  <div class="resume-modal-panel" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <div class="resume-modal-header">
+      <h3 id="resumeModalTitle" data-lang="en">Résumé</h3>
+      <h3 data-lang="ja" hidden>履歴書</h3>
+      <div class="resume-modal-actions">
+        <a href="assets/chihiro_mori_resume.pdf" class="btn btn-primary btn-sm" download data-lang="en">Download</a>
+        <a href="assets/chihiro_mori_resume.pdf" class="btn btn-primary btn-sm" download data-lang="ja" hidden>ダウンロード</a>
+        <button type="button" class="resume-modal-close" data-close-modal aria-label="Close">&times;</button>
+      </div>
+    </div>
+    <iframe src="assets/chihiro_mori_resume.pdf" class="resume-modal-frame" title="Résumé"></iframe>
+  </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>

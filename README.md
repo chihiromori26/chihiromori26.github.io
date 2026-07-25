@@ -8,7 +8,7 @@ A personal academic portfolio site: About, Research & Projects, Education, Cultu
 index.html          → the whole site (one page, anchor-linked sections)
 css/style.css        → all styling
 js/script.js          → nav toggle, scroll progress bar, scroll-reveal animation
-assets/Chihiro Mori Resume May 31 2026.pdf   → downloadable résumé (linked from the hero button)
+assets/chihiro_mori_resume.pdf   → downloadable résumé (linked from the hero button)
 assets/images/        → put your profile photo here (see below)
 ```
 
