@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Chihiro Mori — Computer Science, University of Toronto</title>
+<meta id="pageDescription" name="description" content="Portfolio of Chihiro Mori, Computer Science student at the University of Toronto — research in AI, LLMs, and NLP, technical projects, and cross-cultural activities.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+JP:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">Chihiro Mori</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#about" data-lang="en">About</a>
+      <a href="#about" data-lang="ja" hidden>プロフィール</a>
+      <a href="#research" data-lang="en">Research &amp; Projects</a>
+      <a href="#research" data-lang="ja" hidden>研究・プロジェクト</a>
+      <a href="#education" data-lang="en">Education</a>
+      <a href="#education" data-lang="ja" hidden>学歴</a>
+      <a href="#culture" data-lang="en">Culture &amp; Talks</a>
+      <a href="#culture" data-lang="ja" hidden>文化活動・講演</a>
+      <a href="#contact" data-lang="en">Contact</a>
+      <a href="#contact" data-lang="ja" hidden>お問い合わせ</a>
+    </nav>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Language / 言語">
+      <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+      <button type="button" class="lang-btn" data-lang-btn="ja">日本語</button>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow reveal" data-lang="en">Toronto, Canada</p>
+      <p class="eyebrow reveal" data-lang="ja" hidden>カナダ・トロント</p>
+      <h1 class="reveal">Chihiro Mori</h1>
+      <p class="hero-subtitle reveal" data-lang="en">Computer Science student at the University of Toronto (Trinity College), exploring large language models, responsible AI, and the networks that shape research innovation.</p>
+      <p class="hero-subtitle reveal" data-lang="ja" hidden>トロント大学トリニティ・カレッジでコンピュータサイエンスを専攻。大規模言語モデル（LLM）、責任あるAI、そして研究イノベーションを形作るネットワークについて探究しています。</p>
+      <div class="hero-actions reveal">
+        <a href="#research" class="btn btn-primary" data-lang="en">View my work</a>
+        <a href="#research" class="btn btn-primary" data-lang="ja" hidden>研究・活動を見る</a>
+        <a href="assets/Chihiro_Mori_Resume.pdf" class="btn btn-outline" download data-lang="en">Download résumé</a>
+        <a href="assets/Chihiro_Mori_Resume.pdf" class="btn btn-outline" download data-lang="ja" hidden>履歴書をダウンロード</a>
+      </div>
+      <div class="hero-links reveal">
+        <a href="https://www.linkedin.com/in/mori-chihiro/" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="dot">·</span>
+        <a href="https://www.instagram.com/chihiromori_toronto/" target="_blank" rel="noopener">Instagram</a>
+        <span class="dot">·</span>
+        <a href="https://github.com/chihiromori26" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot">·</span>
+        <a href="mailto:chihiro.mori@mail.utoronto.ca" data-lang="en">Email</a>
+        <a href="mailto:chihiro.mori@mail.utoronto.ca" data-lang="ja" hidden>メール</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <div class="photo-frame">
+        <img id="profilePhoto" src="assets/images/profile.jpg" data-alt-en="Portrait of Chihiro Mori" data-alt-ja="Chihiro Moriのポートレート写真" alt="Portrait of Chihiro Mori" onerror="this.parentElement.classList.add('photo-placeholder')">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-label reveal" data-lang="en">01 — About</p>
+      <p class="section-label reveal" data-lang="ja" hidden>01 — プロフィール</p>
+      <h2 class="reveal" data-lang="en">A little about me</h2>
+      <h2 class="reveal" data-lang="ja" hidden>自己紹介</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-lang="en">I'm an incoming second-year Computer Science student at Trinity College, University of Toronto, with a 4.0 GPA and a growing focus on large language models, responsible AI, and the innovation ecosystems that surround them. My research interests sit at the intersection of NLP and citation network analysis — understanding not just how models work, but how research communities build on each other.</p>
+          <p data-lang="ja" hidden>トロント大学トリニティ・カレッジのコンピュータサイエンス専攻2年生（2026年9月進級予定）で、GPAは4.0/4.0です。大規模言語モデル（LLM）や責任あるAI、そしてそれらを取り巻くイノベーション・エコシステムへの関心を深めています。研究の軸は自然言語処理（NLP）と引用ネットワーク分析の交差点にあり、モデルの仕組みそのものだけでなく、研究コミュニティがどのように互いの成果の上に積み重なっていくのかを理解したいと考えています。</p>
+          <p data-lang="en">Originally from Tokyo, I moved to Toronto to study at one of the world's leading centres for AI research. Outside the lab, I perform as a violinist, contribute to my university's Japanese student network, and occasionally share my own path into international study with students back home considering the same leap.</p>
+          <p data-lang="ja" hidden>出身は東京で、世界有数のAI研究拠点の一つであるトロントに渡り、現在ここで学んでいます。研究以外の時間には、バイオリニストとして演奏活動を行い、大学内の日本人ネットワークの運営にも携わっています。また、海外進学を目指す日本の学生に向けて、自身の経験を伝える機会もいただいています。</p>
+          <p data-lang="en">I'm always glad to connect with researchers, collaborators, and fellow students — reach out via the contact section below.</p>
+          <p data-lang="ja" hidden>研究者や共同研究者、学生の皆さんとのつながりをいつでも歓迎しています。下記の「お問い合わせ」からお気軽にご連絡ください。</p>
+        </div>
+        <div class="about-facts reveal">
+          <div class="fact">
+            <span class="fact-label" data-lang="en">Studying</span>
+            <span class="fact-label" data-lang="ja" hidden>所属</span>
+            <span class="fact-value" data-lang="en">B.Sc. Computer Science, Trinity College</span>
+            <span class="fact-value" data-lang="ja" hidden>コンピュータサイエンス学士課程（トリニティ・カレッジ）</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label" data-lang="en">Focus</span>
+            <span class="fact-label" data-lang="ja" hidden>研究テーマ</span>
+            <span class="fact-value" data-lang="en">LLMs · Responsible AI · NLP · Citation Networks</span>
+            <span class="fact-value" data-lang="ja" hidden>LLM・責任あるAI・NLP・引用ネットワーク分析</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label" data-lang="en">Languages</span>
+            <span class="fact-label" data-lang="ja" hidden>言語</span>
+            <span class="fact-value" data-lang="en">Native Japanese · Fluent English</span>
+            <span class="fact-value" data-lang="ja" hidden>日本語（ネイティブ）・英語（流暢）</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label" data-lang="en">Based in</span>
+            <span class="fact-label" data-lang="ja" hidden>拠点</span>
+            <span class="fact-value" data-lang="en">Toronto, ON, Canada</span>
+            <span class="fact-value" data-lang="ja" hidden>カナダ・オンタリオ州トロント</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & PROJECTS -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <p class="section-label reveal" data-lang="en">02 — Research &amp; Projects</p>
+      <p class="section-label reveal" data-lang="ja" hidden>02 — 研究・プロジェクト</p>
+      <h2 class="reveal" data-lang="en">Research &amp; technical experience</h2>
+      <h2 class="reveal" data-lang="ja" hidden>研究・実務経験</h2>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">
+            <span data-lang="en">May 2026 – Present</span>
+            <span data-lang="ja" hidden>2026年5月〜現在</span>
+          </div>
+          <div class="timeline-content">
+            <h3 data-lang="en">LLM Community Researcher, LLMATCH Season 4</h3>
+            <h3 data-lang="ja" hidden>LLMコミュニティリサーチャー（LLMATCH Season 4）</h3>
+            <p class="timeline-org" data-lang="en">Matsuo–Iwasawa Lab, University of Tokyo</p>
+            <p class="timeline-org" data-lang="ja" hidden>松尾・岩澤研究室（東京大学）</p>
+            <p data-lang="en">Building a foundation in LLM research with the support of lab researchers, conducting individual projects and sharing findings with the community as part of this selective initiative.</p>
+            <p data-lang="ja" hidden>研究室のメンバーのサポートを受けながらLLM研究の基礎を築き、個人プロジェクトを進めながら、選抜制のコミュニティ内で研究成果を共有しています。</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">
+            <span data-lang="en">Jan 2026 – Present</span>
+            <span data-lang="ja" hidden>2026年1月〜現在</span>
+          </div>
+          <div class="timeline-content">
+            <h3 data-lang="en">Web Division Executive</h3>
+            <h3 data-lang="ja" hidden>Web部門エグゼクティブ</h3>
+            <p class="timeline-org" data-lang="en">University of Toronto Japan Network (UTJN)</p>
+            <p class="timeline-org" data-lang="ja" hidden>トロント大学日本人会（UTJN）</p>
+            <p data-lang="en">Architected and maintain the official UTJN website on a full-stack Next.js, FastAPI, and PostgreSQL architecture, deployed via Docker on AWS. Work across Marketing, Finance, and Social teams to translate organizational needs into scalable features.</p>
+            <p data-lang="ja" hidden>Next.js・FastAPI・PostgreSQLによるフルスタック構成でUTJN公式サイトを設計・運用し、DockerでAWS上にデプロイ。マーケティング、財務、ソーシャルの各チームと連携し、組織のニーズをスケーラブルな機能に落とし込んでいます。</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">
+            <span data-lang="en">March 2026</span>
+            <span data-lang="ja" hidden>2026年3月</span>
+          </div>
+          <div class="timeline-content">
+            <h3 data-lang="en">Presenter, Trinity College Undergraduate Research Conference 2026</h3>
+            <h3 data-lang="ja" hidden>登壇者、Trinity College Undergraduate Research Conference 2026</h3>
+            <p data-lang="en">Presented a research proposal, <em>"Comparative Analysis of AI Innovation Ecosystems: A Citation Network Study of the University of Toronto and the University of Tokyo."</em></p>
+            <p data-lang="ja" hidden>研究計画書「<em>AIイノベーション・エコシステムの比較分析：トロント大学と東京大学における引用ネットワーク研究</em>」を発表しました。</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">
+            <span data-lang="en">Aug 2025</span>
+            <span data-lang="ja" hidden>2025年8月</span>
+          </div>
+          <div class="timeline-content">
+            <h3 data-lang="en">Global Consumer Intelligence Program Student</h3>
+            <h3 data-lang="ja" hidden>Global Consumer Intelligence Program 参加</h3>
+            <p class="timeline-org" data-lang="en">Matsuo Lab, University of Tokyo</p>
+            <p class="timeline-org" data-lang="ja" hidden>松尾研究室（東京大学）</p>
+            <p data-lang="en">Developed an end-to-end performance-prediction model using LightGBM on the IBM HR Analytics Employee Attrition dataset; engineered custom features and delivered a data-driven talent development proposal (top 14% completion rate).</p>
+            <p data-lang="ja" hidden>IBM HR Analytics Employee Attritionデータセットを用いてLightGBMによるエンドツーエンドの人事パフォーマンス予測モデルを開発。独自の特徴量を設計し、データに基づいた人材育成提案を実施しました（修了率上位14%）。</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">
+            <span data-lang="en">May 2024 – Dec 2024</span>
+            <span data-lang="ja" hidden>2024年5月〜12月</span>
+          </div>
+          <div class="timeline-content">
+            <h3 data-lang="en">Guest Research Student</h3>
+            <h3 data-lang="ja" hidden>特別研究生</h3>
+            <p class="timeline-org" data-lang="en">Sakata Lab, University of Tokyo</p>
+            <p class="timeline-org" data-lang="ja" hidden>坂田研究室（東京大学）</p>
+            <p data-lang="en">Presented research three times on group simulation in inquiry-based learning — the optimal balance between member diversity and group uniqueness — using linear regression and social network analysis.</p>
+            <p data-lang="ja" hidden>探究学習におけるグループシミュレーション「メンバーの多様性とグループの独自性の最適なバランス」について、線形回帰とソーシャルネットワーク分析を用いて3回研究発表を行いました。</p>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="subsection-title reveal" data-lang="en">Technical projects</h3>
+      <h3 class="subsection-title reveal" data-lang="ja" hidden>技術プロジェクト</h3>
+      <div class="card-grid">
+        <div class="card reveal">
+          <span class="card-tag" data-lang="en">STA130 · Fall 2025</span>
+          <span class="card-tag" data-lang="ja" hidden>STA130・2025年秋学期</span>
+          <h4 data-lang="en">Healthcare Data Analysis</h4>
+          <h4 data-lang="ja" hidden>医療データ分析</h4>
+          <p data-lang="en">Co-led a research project for Nucleus Independent Living, analyzing gender-based cost disparities across 4,000+ patient records using R-based regression, decision trees, and visualizations.</p>
+          <p data-lang="ja" hidden>Nucleus Independent Livingのための研究プロジェクトを共同で主導し、4,000件以上の患者記録から性別による医療費格差を分析。Rによる回帰分析、決定木、可視化を活用しました。</p>
+        </div>
+        <div class="card reveal">
+          <span class="card-tag" data-lang="en">CSC111 · Winter 2026</span>
+          <span class="card-tag" data-lang="ja" hidden>CSC111・2026年冬学期</span>
+          <h4 data-lang="en">NLP Recommendation System</h4>
+          <h4 data-lang="ja" hidden>NLPを用いた推薦システム</h4>
+          <p data-lang="en">Built a book recommendation engine in Python over 75 Project Gutenberg novels, extracting syntactic features (parse tree depth, lexical diversity) with an interactive Flask + Plotly interface.</p>
+          <p data-lang="ja" hidden>Project Gutenbergの75作品を対象に、Pythonで書籍推薦エンジンを構築。構文的特徴（パースツリーの深さ、語彙の多様性）を抽出し、Flask + Plotlyによるインタラクティブなインターフェースを実装しました。</p>
+        </div>
+        <div class="card reveal">
+          <span class="card-tag">NewHacks 2025 (IEEE)</span>
+          <h4>FriendLink</h4>
+          <p data-lang="en">Built a social connection platform featuring a matching system and virtual study rooms, using Python and Flask, at a 24-hour hackathon.</p>
+          <p data-lang="ja" hidden>24時間のハッカソンにて、Python・Flaskを用いてマッチング機能とバーチャル自習室を備えたソーシャルコネクションプラットフォームを開発しました。</p>
+        </div>
+      </div>
+
+      <h3 class="subsection-title reveal" data-lang="en">Skills</h3>
+      <h3 class="subsection-title reveal" data-lang="ja" hidden>スキル</h3>
+      <div class="skills reveal">
+        <div class="skill-group">
+          <span class="skill-group-label" data-lang="en">Languages</span>
+          <span class="skill-group-label" data-lang="ja" hidden>プログラミング言語</span>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">SQL</span><span class="tag">R</span><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label" data-lang="en">Tools &amp; Frameworks</span>
+          <span class="skill-group-label" data-lang="ja" hidden>ツール・フレームワーク</span>
+          <div class="tags">
+            <span class="tag">React / Next.js</span><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Tailwind CSS</span><span class="tag">PostgreSQL</span><span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Git</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label" data-lang="en">Data &amp; ML</span>
+          <span class="skill-group-label" data-lang="ja" hidden>データ・機械学習</span>
+          <div class="tags">
+            <span class="tag" data-lang="en">Regression Analysis</span>
+            <span class="tag" data-lang="ja" hidden>回帰分析</span>
+            <span class="tag" data-lang="en">Decision Trees</span>
+            <span class="tag" data-lang="ja" hidden>決定木</span>
+            <span class="tag">LightGBM</span>
+            <span class="tag">EDA</span>
+            <span class="tag" data-lang="en">Social Network Analysis</span>
+            <span class="tag" data-lang="ja" hidden>ソーシャルネットワーク分析</span>
+            <span class="tag">NLP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <p class="section-label reveal" data-lang="en">03 — Education</p>
+      <p class="section-label reveal" data-lang="ja" hidden>03 — 学歴</p>
+      <h2 class="reveal" data-lang="en">Education &amp; awards</h2>
+      <h2 class="reveal" data-lang="ja" hidden>学歴・受賞歴</h2>
+
+      <div class="edu-block reveal">
+        <div class="edu-head">
+          <h3>University of Toronto, Trinity College</h3>
+          <span class="edu-date" data-lang="en">Expected June 2029</span>
+          <span class="edu-date" data-lang="ja" hidden>2029年6月卒業予定</span>
+        </div>
+        <p class="edu-degree" data-lang="en">B.Sc. in Computer Science · GPA 4.0 / 4.0</p>
+        <p class="edu-degree" data-lang="ja" hidden>コンピュータサイエンス学士課程・GPA 4.0/4.0</p>
+        <ul class="edu-list">
+          <li data-lang="en"><strong>Awards:</strong> International Merit Admission Award (2025), JASSO Merit Scholarship, Japanese Government (2025)</li>
+          <li data-lang="ja" hidden><strong>受賞歴：</strong>International Merit Admission Award（2025年）、JASSO海外留学支援制度 学部学位取得型 給付奨学金（2025年）</li>
+          <li data-lang="en"><strong>Relevant coursework:</strong> STA130 (Statistical Reasoning), CSC111 (Foundations of Computer Science II)</li>
+          <li data-lang="ja" hidden><strong>関連科目：</strong>STA130（統計的推論）、CSC111（コンピュータサイエンスの基礎II）</li>
+        </ul>
+      </div>
+
+      <h3 class="subsection-title reveal" data-lang="en">Work experience</h3>
+      <h3 class="subsection-title reveal" data-lang="ja" hidden>職務経験</h3>
+      <div class="card-grid two-col">
+        <div class="card reveal">
+          <h4 data-lang="en">Individualized Instructor</h4>
+          <h4 data-lang="ja" hidden>個別指導講師</h4>
+          <p class="card-org" data-lang="en">Julius, Tokyo</p>
+          <p class="card-org" data-lang="ja" hidden>Julius（東京）</p>
+          <p data-lang="en">Tutored Math, English, Science, Social Science, and Japanese to individual students.</p>
+          <p data-lang="ja" hidden>数学・英語・理科・社会・国語を個別指導しました。</p>
+        </div>
+        <div class="card reveal">
+          <h4 data-lang="en">Attendant</h4>
+          <h4 data-lang="ja" hidden>アテンダント</h4>
+          <p class="card-org" data-lang="en">teamLab Planets, Tokyo</p>
+          <p class="card-org" data-lang="ja" hidden>teamLab Planets（東京）</p>
+          <p data-lang="en">Guided international and domestic visitors in English and Japanese, ensuring an engaging and safe experience within the immersive digital art exhibition.</p>
+          <p data-lang="ja" hidden>国内外からの来場者を英語・日本語で案内し、没入型デジタルアート展示における安全で魅力的な体験を提供しました。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURE & TALKS -->
+  <section id="culture" class="section section-alt">
+    <div class="container">
+      <p class="section-label reveal" data-lang="en">04 — Culture &amp; Talks</p>
+      <p class="section-label reveal" data-lang="ja" hidden>04 — 文化活動・講演</p>
+      <h2 class="reveal" data-lang="en">Culture, publications &amp; talks</h2>
+      <h2 class="reveal" data-lang="ja" hidden>文化活動・執筆・講演</h2>
+      <p class="section-intro reveal" data-lang="en">Beyond research, I perform as a violinist, and I've shared my own study-abroad journey with students in Japan considering a similar path — through talks, published essays, and interviews.</p>
+      <p class="section-intro reveal" data-lang="ja" hidden>研究活動のほかに、バイオリニストとして演奏活動を行っています。また、海外進学を目指す日本の学生に向けて、講演や執筆、インタビューを通じて自身の経験を伝えています。</p>
+
+      <div class="culture-grid">
+        <div class="culture-card reveal">
+          <h4 data-lang="en">Invited Speaker — Benesse Route H Info Sessions</h4>
+          <h4 data-lang="ja" hidden>招待講演 — ベネッセ Route H 説明会</h4>
+          <p class="culture-date" data-lang="en">2025 &amp; 2026</p>
+          <p class="culture-date" data-lang="ja" hidden>2025年・2026年</p>
+          <p data-lang="en">Presented on University of Toronto admissions and the JASSO scholarship application process to prospective Japanese applicants.</p>
+          <p data-lang="ja" hidden>トロント大学の出願プロセスやJASSO奨学金の申請について、日本の受験生に向けて講演しました。</p>
+        </div>
+
+        <div class="culture-card reveal">
+          <h4 data-lang="en">Featured Interview — Benesse Overseas Study Lab</h4>
+          <h4 data-lang="ja" hidden>インタビュー掲載 — ベネッセ海外進学・留学ラボ</h4>
+          <p class="culture-date" data-lang="en">June 2026</p>
+          <p class="culture-date" data-lang="ja" hidden>2026年6月</p>
+          <p data-lang="en">Interviewed about academics, campus life, and the application process at the University of Toronto for prospective international students.</p>
+          <p data-lang="ja" hidden>トロント大学での学びやキャンパスライフ、出願準備について、海外進学を目指す学生向けにインタビューを受けました。</p>
+          <a href="https://www.benesse-glc.com/lab/blog/blog20260626" target="_blank" rel="noopener" class="culture-link" data-lang="en">Read the interview →</a>
+          <a href="https://www.benesse-glc.com/lab/blog/blog20260626" target="_blank" rel="noopener" class="culture-link" data-lang="ja" hidden>インタビューを読む →</a>
+        </div>
+
+        <div class="culture-card reveal">
+          <h4 data-lang="en">Publication — The Nikkei Digital Edition</h4>
+          <h4 data-lang="ja" hidden>執筆掲載 — 日本経済新聞電子版</h4>
+          <p class="culture-date" data-lang="en">August 2021</p>
+          <p class="culture-date" data-lang="ja" hidden>2021年8月</p>
+          <p data-lang="en">Published essay exploring the connection between satellite technology and art.</p>
+          <p data-lang="ja" hidden>人工衛星技術とアートの関係性について考察したエッセイを寄稿しました。</p>
+        </div>
+
+        <div class="culture-card reveal">
+          <h4 data-lang="en">Violin Performer</h4>
+          <h4 data-lang="ja" hidden>バイオリン演奏</h4>
+          <p class="culture-date" data-lang="en">Arts and Culture LLC, Trinity College · Sept 2025 – Present</p>
+          <p class="culture-date" data-lang="ja" hidden>Arts and Culture LLC（トリニティ・カレッジ）・2025年9月〜現在</p>
+          <p data-lang="en">Performed solo and ensemble pieces, including music from <em>Spirited Away</em> and <em>Beauty and the Beast</em>, at college talent shows.</p>
+          <p data-lang="ja" hidden>カレッジのタレントショーにて、『<em>千と千尋の神隠し</em>』『<em>美女と野獣</em>』などの楽曲をソロ・アンサンブルで演奏しました。</p>
+        </div>
+
+        <div class="culture-card reveal">
+          <h4 data-lang="en">Jazz Violinist</h4>
+          <h4 data-lang="ja" hidden>ジャズバイオリン演奏</h4>
+          <p class="culture-date" data-lang="en">Otsuma Tama Junior &amp; Senior High School · Feb 2024</p>
+          <p class="culture-date" data-lang="ja" hidden>大妻多摩中学高等学校・2024年2月</p>
+          <p data-lang="en">Performed a jazz arrangement of "Salut d'Amour" in front of an audience of over 2,000 people.</p>
+          <p data-lang="ja" hidden>『愛の挨拶（ジャズ・バージョン）』を、2,000人以上の観客の前で演奏しました。</p>
+        </div>
+
+        <div class="culture-card reveal">
+          <h4 data-lang="en">Follow along</h4>
+          <h4 data-lang="ja" hidden>SNSでフォロー</h4>
+          <p class="culture-date">Instagram &amp; LinkedIn</p>
+          <p data-lang="en">More on daily life in Toronto, music, and student life.</p>
+          <p data-lang="ja" hidden>トロントでの日常、音楽、学生生活について発信しています。</p>
+          <div class="culture-link-group">
+            <a href="https://www.instagram.com/chihiromori_toronto/" target="_blank" rel="noopener" class="culture-link">Instagram →</a>
+            <a href="https://www.linkedin.com/in/mori-chihiro/" target="_blank" rel="noopener" class="culture-link">LinkedIn →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <p class="section-label reveal" data-lang="en">05 — Contact</p>
+      <p class="section-label reveal" data-lang="ja" hidden>05 — お問い合わせ</p>
+      <h2 class="reveal" data-lang="en">Let's connect</h2>
+      <h2 class="reveal" data-lang="ja" hidden>つながりましょう</h2>
+      <p class="section-intro reveal" data-lang="en">Whether you're a potential supervisor, employer, or collaborator — or just want to talk about AI research, Toronto, or music — I'd love to hear from you.</p>
+      <p class="section-intro reveal" data-lang="ja" hidden>指導教員や採用担当者、共同研究者の方はもちろん、AI研究やトロント、音楽について語り合いたい方も、お気軽にご連絡ください。</p>
+
+      <div class="contact-grid reveal">
+        <a href="mailto:chihiro.mori@mail.utoronto.ca" class="contact-item">
+          <span class="contact-label" data-lang="en">Email</span>
+          <span class="contact-label" data-lang="ja" hidden>メール</span>
+          <span class="contact-value">chihiro.mori@mail.utoronto.ca</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mori-chihiro/" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/mori-chihiro</span>
+        </a>
+        <a href="https://github.com/chihiromori26" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/chihiromori26</span>
+        </a>
+        <a href="https://www.instagram.com/chihiromori_toronto/" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">@chihiromori_toronto</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p data-lang="en">&copy; <span class="year-en"></span> Chihiro Mori. Built with HTML, CSS &amp; JavaScript, hosted on GitHub Pages.</p>
+    <p data-lang="ja" hidden>&copy; <span class="year-ja"></span> Chihiro Mori. HTML・CSS・JavaScriptで制作し、GitHub Pagesで公開しています。</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
