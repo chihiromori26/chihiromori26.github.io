@@ -1,17 +1,17 @@
 /* ---------------------------------------------
    Chihiro Mori — Portfolio
-   Navy x Rose Gold — elegant, modern, feminine
+   Navy x Emerald x Salmon — fresh, smart, friendly
 --------------------------------------------- */
 
 :root {
-  --color-bg: #FBF6F3;
-  --color-bg-alt: #F6EAE8;
+  --color-bg: #FDFBF6;
+  --color-bg-alt: #F1F7F2;
   --color-text: #22282F;
-  --color-text-soft: #5C5A63;
-  --color-primary: #16213E;      /* deep navy */
-  --color-accent: #D48A93;       /* rose pink — interactive accent */
-  --color-accent-gold: #B8874A;  /* champagne gold — caption / decorative accent */
-  --color-border: #EAD9DC;
+  --color-text-soft: #5A6560;
+  --color-primary: #1B2A4A;      /* navy — grounding */
+  --color-accent: #2A9D6F;       /* emerald — interactive accent */
+  --color-accent-salmon: #F2896F; /* salmon — caption / decorative accent */
+  --color-border: #E3ECE4;
   --color-card-bg: #FFFFFF;
 
   --font-serif: 'Lora', 'Noto Serif JP', Georgia, serif;
@@ -84,7 +84,7 @@ li { margin-bottom: 6px; }
   position: sticky;
   top: 0;
   z-index: 500;
-  background: rgba(251, 246, 243, 0.9);
+  background: rgba(253, 251, 246, 0.9);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-border);
 }
@@ -196,7 +196,7 @@ li { margin-bottom: 6px; }
   letter-spacing: 0.14em;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--color-accent-gold);
+  color: var(--color-accent-salmon);
   margin-bottom: 12px;
 }
 
@@ -221,8 +221,8 @@ li { margin-bottom: 6px; }
 
 .btn {
   display: inline-block;
-  padding: 12px 26px;
-  border-radius: 4px;
+  padding: 12px 28px;
+  border-radius: 24px;
   font-size: 0.95rem;
   font-weight: 600;
   transition: all var(--transition);
@@ -234,7 +234,7 @@ li { margin-bottom: 6px; }
 .btn-primary {
   background: var(--color-primary);
   color: #fff;
-  border-bottom: 2px solid var(--color-accent-gold);
+  border-bottom: 2px solid var(--color-accent-salmon);
 }
 .btn-primary:hover {
   background: var(--color-accent);
@@ -253,7 +253,7 @@ li { margin-bottom: 6px; }
   background: transparent;
 }
 
-.btn-sm { padding: 8px 18px; font-size: 0.85rem; }
+.btn-sm { padding: 8px 20px; font-size: 0.85rem; }
 
 .hero-links {
   font-size: 0.9rem;
@@ -271,7 +271,7 @@ li { margin-bottom: 6px; }
   overflow: hidden;
   border: 3px solid var(--color-bg);
   outline: 1px solid var(--color-border);
-  box-shadow: 0 20px 40px rgba(180, 90, 110, 0.18);
+  box-shadow: 0 20px 40px rgba(42, 157, 111, 0.18);
 }
 
 .photo-frame img {
@@ -283,7 +283,7 @@ li { margin-bottom: 6px; }
 
 .photo-placeholder .photo-frame,
 .hero-photo.photo-placeholder .photo-frame {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent), var(--color-accent-gold));
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent), var(--color-accent-salmon));
 }
 .hero-photo.photo-placeholder img { display: none; }
 .hero-photo.photo-placeholder .photo-frame::after {
@@ -311,7 +311,7 @@ li { margin-bottom: 6px; }
   letter-spacing: 0.14em;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--color-accent-gold);
+  color: var(--color-accent-salmon);
   margin-bottom: 10px;
 }
 
@@ -349,7 +349,7 @@ li { margin-bottom: 6px; }
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-accent-gold);
+  color: var(--color-accent-salmon);
   font-weight: 600;
 }
 .fact-value {
@@ -378,7 +378,7 @@ li { margin-bottom: 6px; }
 .timeline-date {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--color-accent-gold);
+  color: var(--color-accent-salmon);
   letter-spacing: 0.02em;
 }
 
@@ -402,13 +402,13 @@ li { margin-bottom: 6px; }
 .card {
   background: var(--color-card-bg);
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 28px;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 32px rgba(180, 90, 110, 0.14);
+  box-shadow: 0 16px 32px rgba(42, 157, 111, 0.16);
 }
 
 .card-tag {
@@ -417,7 +417,7 @@ li { margin-bottom: 6px; }
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 600;
-  color: var(--color-accent-gold);
+  color: var(--color-accent-salmon);
   margin-bottom: 12px;
 }
 
@@ -460,7 +460,7 @@ li { margin-bottom: 6px; }
   padding: 32px;
   background: var(--color-card-bg);
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 16px;
 }
 .edu-head {
   display: flex;
@@ -471,7 +471,7 @@ li { margin-bottom: 6px; }
 }
 .edu-date {
   font-size: 0.85rem;
-  color: var(--color-accent-gold);
+  color: var(--color-accent-salmon);
   font-weight: 600;
 }
 .edu-degree {
@@ -491,18 +491,18 @@ li { margin-bottom: 6px; }
 .culture-card {
   background: var(--color-card-bg);
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 26px;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .culture-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 32px rgba(180, 90, 110, 0.14);
+  box-shadow: 0 16px 32px rgba(42, 157, 111, 0.16);
 }
 .culture-date {
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--color-accent-gold);
+  color: var(--color-accent-salmon);
   margin-bottom: 10px;
 }
 .culture-link {
@@ -530,18 +530,18 @@ li { margin-bottom: 6px; }
   padding: 24px 28px;
   background: var(--color-card-bg);
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 16px;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .contact-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 32px rgba(180, 90, 110, 0.14);
+  box-shadow: 0 16px 32px rgba(42, 157, 111, 0.16);
 }
 .contact-label {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-accent-gold);
+  color: var(--color-accent-salmon);
   font-weight: 600;
 }
 .contact-value {
@@ -565,10 +565,10 @@ li { margin-bottom: 6px; }
 /* Résumé preview modal */
 .resume-modal { position: fixed; inset: 0; z-index: 900; display: none; }
 .resume-modal.open { display: block; }
-.resume-modal-backdrop { position: absolute; inset: 0; background: rgba(22, 33, 62, 0.55); backdrop-filter: blur(2px); }
+.resume-modal-backdrop { position: absolute; inset: 0; background: rgba(27, 42, 74, 0.55); backdrop-filter: blur(2px); }
 .resume-modal-panel {
   position: relative; width: min(92vw, 860px); height: min(88vh, 1000px); margin: 6vh auto 0;
-  background: var(--color-card-bg); border-radius: 10px; overflow: hidden;
+  background: var(--color-card-bg); border-radius: 16px; overflow: hidden;
   display: flex; flex-direction: column; box-shadow: 0 30px 60px rgba(0,0,0,0.25);
 }
 .resume-modal-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; border-bottom: 1px solid var(--color-border); flex-wrap: wrap; gap: 8px; }
