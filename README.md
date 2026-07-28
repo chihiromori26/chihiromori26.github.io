@@ -17,7 +17,7 @@ assets/images/        → put your profile photo here (see below)
 Save a square-ish headshot as:
 
 ```
-assets/images/profile.jpg
+assets/images/profile_pic_sns.jpg
 ```
 
 If this file is missing, the site automatically shows an elegant "CM" placeholder circle instead — so nothing breaks either way. Once you drop in the real photo, refresh the page and it will appear.
